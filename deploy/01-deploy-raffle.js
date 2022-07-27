@@ -43,7 +43,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     ]
     const raffle = await deploy("Raffle", {
         from: deployer,
-        arguments: arguments,
+        args: arguments,
         log: true,
         waitConfirmations: waitBlockConfirmations,
     })
